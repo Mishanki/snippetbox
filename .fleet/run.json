@@ -8,6 +8,6 @@
       "buildParams": [
           "$PROJECT_DIR$/cmd/web",
       ],
-    },
+    }
   ]
 }
