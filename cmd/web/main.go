@@ -19,6 +19,7 @@ import (
 type application struct {
     errorLog *log.Logger
     infoLog *log.Logger
+    users *models.UserModel
     snippets *models.SnippetModel
     templateCache map[string]*template.Template
     formDecoder *form.Decoder
@@ -59,6 +60,7 @@ func main ()  {
         errorLog: errorLog,
         infoLog: infoLog,
         snippets: &models.SnippetModel{DB: db},
+        users: &models.UserModel{DB: db},
         templateCache: templateCache,
         formDecoder: formDecoder,
         sessionManager: sessionManager,
