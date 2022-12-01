@@ -1,6 +1,6 @@
-/tls
-/.idea
-/.vscode
-/.fleet
+/tls/
+/.idea/
+/.vscode/
+/.fleet/
 handlers
-/tmp
+/tmp/
