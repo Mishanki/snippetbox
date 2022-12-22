@@ -1,19 +1,19 @@
 version: '3.9'
 
 services:
-     app:
-         container_name: snippetbox_app
-         tty: true
-         build:
-             context: .
-             dockerfile: _docker/local/app/Dockerfile
-         ports:
-             - 4000:4000
-         restart: on-failure
-         depends_on:
-             - db
-         links:
-             - db
+#     app:
+#         container_name: snippetbox_app
+#         tty: true
+#         build:
+#             context: .
+#             dockerfile: _docker/local/app/Dockerfile
+#         ports:
+#             - 4000:4000
+#         restart: on-failure
+#         depends_on:
+#             - db
+#         links:
+#             - db
 
      db:
         image: mysql:latest
